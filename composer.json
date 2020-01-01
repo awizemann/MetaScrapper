@@ -1,0 +1,46 @@
+{
+    "name": "hojjabr/metascrapper",
+    "description": "Laravel 6 package to get all the meta data from a URL",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Hossein Jabbari",
+            "email": "mr.hhkj@gmail.com",
+            "homepage": "https://github.com/hojjabr"
+        }
+    ],
+    "homepage": "https://github.com/hojjabr/metascrapper",
+    "keywords": [
+        "Laravel",
+        "MetaScrapper"
+    ],
+    "require": {
+        "illuminate/support": "~5|~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hojjabr\\MetaScrapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hojjabr\\MetaScrapper\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "hojjabr\\MetaScrapper\\MetaScrapperServiceProvider"
+            ],
+            "aliases": {
+                "MetaScrapper": "hojjabr\\MetaScrapper\\Facades\\MetaScrapper"
+            }
+        }
+    }
+}
