@@ -1,6 +1,8 @@
 # MetaScrapper
 
-Laravel 6 package to get all the meta data from a URL. All types of meta tags are supported, even OpenGraph and Twitter.
+Laravel 6 package to get all the meta data from a URL. 
+
+All types of meta tags are supported, even OpenGraph and Twitter.
 
 ## Installation
 
