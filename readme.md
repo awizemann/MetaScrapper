@@ -1,4 +1,4 @@
-# MetaScrapper
+# MetaScrapper with MIME support
 
 Laravel 6 package to get all the meta data from a URL. 
 
