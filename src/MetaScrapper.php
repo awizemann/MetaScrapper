@@ -1,6 +1,6 @@
 <?php
 
-namespace hojjabr\MetaScrapper;
+namespace hojabbr\MetaScrapper;
 
 use DOMDocument;
 
