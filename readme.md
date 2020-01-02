@@ -2,7 +2,7 @@
 
 Laravel 6 package to get all the meta data from a URL. 
 
-It will first check the URL for it's mime type.
+It will first check the URL for it's Mime type.
 
 ## Supports
 
@@ -11,7 +11,7 @@ It will first check the URL for it's mime type.
 - OpenGraph tags
 - Any other type of tag
 - Files (Image, Audio, Video)
-- Application mime type
+- Application Mime type
 
 
 ## Installation
