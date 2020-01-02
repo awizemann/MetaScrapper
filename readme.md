@@ -9,13 +9,13 @@ All types of meta tags are supported, even OpenGraph and Twitter.
 Via Composer
 
 ```bash
-$ composer require hojjabr/metascrapper
+$ composer require hojabbr/metascrapper
 ```
 
 ## Usage
 
 ```php
-use hojjabr\MetaScrapper\Facades\MetaScrapper;
+use hojabbr\MetaScrapper\Facades\MetaScrapper;
 
 return MetaScrapper::scrap("http://www.yahoo.com");
 ```
