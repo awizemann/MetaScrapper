@@ -8,6 +8,57 @@ class MetaScrapper
 {
     public function scrap($url)
     {
+        stream_context_set_default(
+            array(
+                'http' => array(
+                    'method' => 'HEAD'
+                )
+            )
+        );
+        $headers = get_headers($url, 1);
+        $type = $headers['Content-Type'];
+        if (is_array($type)) {
+            $type = $type[0];
+        }
+        $maintype = explode("/", $type, 2);
+        switch ($maintype[0]) {
+            case 'application':
+                return [
+                    'type' => $type,
+                    'application' => $url,
+                    'application:url' => $url,
+                ];
+                break;
+            case 'audio':
+                return [
+                    'type' => $type,
+                    'audio' => $url,
+                    'audio:url' => $url,
+                ];
+                break;
+            case 'video':
+                return [
+                    'type' => $type,
+                    'video' => $url,
+                    'video:url' => $url,
+                ];
+                break;
+            case 'image':
+                return [
+                    'type' => $type,
+                    'image' => $url,
+                    'image:url' => $url,
+                ];
+                break;
+            default:
+                $response = $this->get_tags($url);
+        }
+
+        return $response;
+    }
+
+    protected function get_tags($url)
+    {
         $html = $this->curl_get_contents($url);
         $doc = new DOMDocument();
         @$doc->loadHTML('<?xml encoding="utf-8" ?>' . $html);
@@ -23,6 +74,8 @@ class MetaScrapper
         }
         return $metadata;
     }
+
+
     protected function curl_get_contents($url)
     {
         $headers = [
