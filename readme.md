@@ -2,7 +2,17 @@
 
 Laravel 6 package to get all the meta data from a URL. 
 
-All types of meta tags are supported, even OpenGraph and Twitter.
+It will first check the URL for it's mime type.
+
+## Supports
+
+- Meta tags
+- Twitter tags
+- OpenGraph tags
+- Any other type of tag
+- Files (Image, Audio, Video)
+- Application mime type
+
 
 ## Installation
 
