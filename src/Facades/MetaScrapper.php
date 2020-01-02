@@ -1,6 +1,6 @@
 <?php
 
-namespace hojjabr\MetaScrapper\Facades;
+namespace hojabbr\MetaScrapper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
