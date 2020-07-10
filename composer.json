@@ -1,6 +1,6 @@
 {
-    "name": "hojabbr/metascrapper",
-    "description": "Laravel 6 package to get all the meta data from a URL",
+    "name": "rookmoot/metascrapper",
+    "description": "Laravel package to get all the meta data from a URL",
     "license": "unlicense",
     "authors": [
         {
@@ -9,7 +9,7 @@
             "homepage": "https://github.com/hojabbr"
         }
     ],
-    "homepage": "https://github.com/hojabbr/metascrapper",
+    "homepage": "https://github.com/rookmoot/metascrapper",
     "keywords": [
         "Laravel",
         "MetaScrapper"
@@ -22,21 +22,21 @@
     },
     "autoload": {
         "psr-4": {
-            "hojabbr\\MetaScrapper\\": "src/"
+            "rookmoot\\MetaScrapper\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "hojabbr\\MetaScrapper\\Tests\\": "tests"
+            "rookmoot\\MetaScrapper\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "hojabbr\\MetaScrapper\\MetaScrapperServiceProvider"
+                "rookmoot\\MetaScrapper\\MetaScrapperServiceProvider"
             ],
             "aliases": {
-                "MetaScrapper": "hojabbr\\MetaScrapper\\Facades\\MetaScrapper"
+                "MetaScrapper": "rookmoot\\MetaScrapper\\Facades\\MetaScrapper"
             }
         }
     }
