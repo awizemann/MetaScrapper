@@ -1,6 +1,6 @@
 <?php
 
-namespace rookmoot\MetaScraper\Facades;
+namespace awizemann\metascraper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

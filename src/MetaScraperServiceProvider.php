@@ -1,6 +1,6 @@
 <?php
 
-namespace rookmoot\MetaScraper;
+namespace awizemann\metascraper;
 
 use Illuminate\Support\ServiceProvider;
 
