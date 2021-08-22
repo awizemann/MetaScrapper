@@ -1,6 +1,6 @@
 <?php
 
-namespace rookmoot\MetaScrapper;
+namespace rookmoot\MetaScraper;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,11 +31,11 @@ class MetaScrapperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/metascrapper.php', 'metascrapper');
+        $this->mergeConfigFrom(__DIR__.'/../config/metascraper.php', 'metascraper');
 
         // Register the service the package provides.
-        $this->app->singleton('metascrapper', function ($app) {
-            return new MetaScrapper;
+        $this->app->singleton('metascraper', function ($app) {
+            return new MetaScraper;
         });
     }
 
@@ -46,7 +46,7 @@ class MetaScrapperServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['metascrapper'];
+        return ['metascraper'];
     }
     
     /**
@@ -58,23 +58,23 @@ class MetaScrapperServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/metascrapper.php' => config_path('metascrapper.php'),
-        ], 'metascrapper.config');
+            __DIR__.'/../config/metascraper.php' => config_path('metascraper.php'),
+        ], 'metascraper.config');
 
         // Publishing the views.
         /*$this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/hojabbr'),
-        ], 'metascrapper.views');*/
+        ], 'metascraper.views');*/
 
         // Publishing assets.
         /*$this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/hojabbr'),
-        ], 'metascrapper.views');*/
+        ], 'metascraper.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang/vendor/hojabbr'),
-        ], 'metascrapper.views');*/
+        ], 'metascraper.views');*/
 
         // Registering package commands.
         // $this->commands([]);

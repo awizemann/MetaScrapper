@@ -1,18 +1,18 @@
 {
-    "name": "rookmoot/metascrapper",
-    "description": "Laravel package to get all the meta data from a URL",
-    "license": "unlicense",
+    "name": "awizemann/metascraper",
+    "description": "Laravel package to get all the meta data from a URL (forked from rookmoot/metascraper)",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Hossein Jabbari",
-            "email": "mr.hhkj@gmail.com",
-            "homepage": "https://github.com/hojabbr"
+            "name": "Alan Wizemann",
+            "email": "awizemann+meta@gmail.com",
+            "homepage": "https://github.com/awizemann"
         }
     ],
-    "homepage": "https://github.com/rookmoot/metascrapper",
+    "homepage": "https://github.com/awizemann/metascraper",
     "keywords": [
         "Laravel",
-        "MetaScrapper"
+        "Meta Tags"
     ],
     "require-dev": {
         "phpunit/phpunit": "^9.0",
@@ -20,21 +20,21 @@
     },
     "autoload": {
         "psr-4": {
-            "rookmoot\\MetaScrapper\\": "src/"
+            "awizemann\\metascraper\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "rookmoot\\MetaScrapper\\Tests\\": "tests"
+            "awizemann\\metascraper\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "rookmoot\\MetaScrapper\\MetaScrapperServiceProvider"
+                "awizemann\\metascraper\\meta-scraperServiceProvider"
             ],
             "aliases": {
-                "MetaScrapper": "rookmoot\\MetaScrapper\\Facades\\MetaScrapper"
+                "metascraper": "awizemann\\metascraper\\Facades\\metascraper"
             }
         }
     }

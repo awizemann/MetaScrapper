@@ -1,12 +1,12 @@
 <?php
 
-namespace rookmoot\MetaScrapper;
+namespace rookmoot\MetaScraper;
 
 use DOMDocument;
 
-class MetaScrapper
+class MetaScraper
 {
-    public function scrap($url)
+    public function scrape($url)
     {
         stream_context_set_default(
             array(

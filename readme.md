@@ -1,8 +1,10 @@
-# MetaScrapper with MIME support
+# MetaScraper with MIME support
 
-Laravel 6 package to get all the meta data from a URL. 
+Laravel 8 package to get all the meta data from a URL. 
 
 It will first check the URL for it's Mime type.
+
+Forked from an unsupported repo: rookmoot/MetaScrapper
 
 ## Supports
 
@@ -19,15 +21,15 @@ It will first check the URL for it's Mime type.
 Via Composer
 
 ```bash
-$ composer require hojabbr/metascrapper
+$ composer require awizemann/metascraper
 ```
 
 ## Usage
 
 ```php
-use hojabbr\MetaScrapper\Facades\MetaScrapper;
+use awizemann\metascraper\Facades\MetaScraper;
 
-return MetaScrapper::scrap("http://www.yahoo.com");
+return MetaScraper::scrape("http://www.yahoo.com");
 ```
 
 This will return an array of all the meta for the given URL.

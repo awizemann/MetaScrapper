@@ -1,10 +1,10 @@
 <?php
 
-namespace rookmoot\MetaScrapper\Facades;
+namespace rookmoot\MetaScraper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class MetaScrapper extends Facade
+class MetaScraper extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class MetaScrapper extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'metascrapper';
+        return 'metascraper';
     }
 }
