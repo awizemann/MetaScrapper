@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "awizemann\\metascraper\\meta-scraperServiceProvider"
+                "awizemann\\metascraper\\MetaScraperServiceProvider"
             ],
             "aliases": {
                 "metascraper": "awizemann\\metascraper\\Facades\\metascraper"
