@@ -4,7 +4,7 @@ namespace rookmoot\MetaScraper;
 
 use Illuminate\Support\ServiceProvider;
 
-class MetaScrapperServiceProvider extends ServiceProvider
+class MetaScraperServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
