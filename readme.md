@@ -29,7 +29,8 @@ $ composer require awizemann/metascraper
 ```php
 use awizemann\metascraper\Facades\MetaScraper;
 
-return MetaScraper::scrape("http://www.yahoo.com");
+$scraper = new MetaScraper;
+return $scraper->scrape("https://yahoo.com");
 ```
 
 This will return an array of all the meta for the given URL.
