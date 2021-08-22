@@ -13,15 +13,7 @@ class MetaScraperServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'hojabbr');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'hojabbr');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
-        // Publishing is only necessary when using the CLI.
-        if ($this->app->runningInConsole()) {
-            $this->bootForConsole();
-        }
+       
     }
 
     /**
@@ -60,23 +52,5 @@ class MetaScraperServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/metascraper.php' => config_path('metascraper.php'),
         ], 'metascraper.config');
-
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/hojabbr'),
-        ], 'metascraper.views');*/
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/hojabbr'),
-        ], 'metascraper.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/hojabbr'),
-        ], 'metascraper.views');*/
-
-        // Registering package commands.
-        // $this->commands([]);
     }
 }
